@@ -6,3 +6,135 @@
   --cor-branco:     #FFF8F6;
   --cor-destaque:   #C9A96E;
 }
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== VARIÁVEIS ===== */
+:root {
+  --cor-fundo:      #F9E4E1;
+  --cor-medio:      #F2C9C4;
+  --cor-principal:  #8B4E44;
+  --cor-escuro:     #5C2E28;
+  --cor-branco:     #FFF8F6;
+  --cor-destaque:   #C9A96E;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-escuro);
+  line-height: 1.6;
+}
+
+/* ===== CONTAINER GLOBAL ===== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== TÍTULOS ===== */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--cor-principal);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+/* ===== LINKS ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== BOTÕES ===== */
+button {
+  background-color: var(--cor-principal);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--cor-escuro);
+}
+
+/* ===== SEÇÕES ===== */
+section {
+  padding: 80px 20px;
+}
+
+/* ===== INÍCIO ===== */
+#inicio {
+  text-align: center;
+}
+
+#inicio img {
+  max-width: 180px;
+  margin-bottom: 20px;
+}
+
+/* ===== CARDÁPIO ===== */
+.cardapio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.produto {
+  background-color: var(--cor-branco);
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+
+  box-shadow: 0 4px 20px rgba(139, 78, 68, 0.1);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* ===== GALERIA ===== */
+.galeria-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.galeria-container img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+}
