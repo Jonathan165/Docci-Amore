@@ -4,102 +4,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap"
-    rel="stylesheet">
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sobre.css">
+  <link rel="stylesheet" href="navbar.css">
+
   <title>Docci Amore</title>
 </head>
 
 <body>
-  <!-- Cabeçalho -->
-  <header>
-    <nav>
-      <h1>Logo</h1>
 
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#cardapio">Cardápio</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#Depoimento">Reviews</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">Docci Amore</h1>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
 
-    <!-- Página inicial -->
+    <!-- Início -->
     <section id="inicio">
       <img src="Logo.png" alt="Logo da Docci Amore">
-      <h1>Título</h1>
-
+      <h1>Docci Amore</h1>
     </section>
 
     <!-- Cardápio -->
     <section id="cardapio">
       <h2>Cardápio</h2>
-      <p>Blá Blá</p>
 
-      <!-- Galeria -->
-      <section id="galeria">
+      <div class="cardapio-container">
 
-        <h2>Galeria</h2>
-        
-        <article>
-          <img src="bolo.png" alt="Foto do Bolo">
-          <article>
-            <img src="bolo.png" alt="Foto da bolo">
-            <article>
-              <img src="bolo.png" alt="Foto de bolo">
-              <article>
-                <img src="bolo.png" alt="Foto do Bolo">
-              </article>
-              </div>
-      </section>
-
-      <!-- Sobre nós -->
-      <section id="sobre">
-        <h1>Sobre</h1>
-        <p>Aqui Ficará a História do nosso Site ou a Descrição</p>
-        </a>
-      </section>
-
-      <!-- Depoimentos -->
-      <section id="Depoimento">
-        <h3>Aqui aonde ficará nosso Depoimento</h3>
-        <p>Blá Blá</p>
-        <article>
-          <p></p>
-          <span></span>
+        <article class="produto">
+          <img src="bolo.png" alt="Bolo">
+          <h3>Bolo de Chocolate</h3>
+          <p>R$ 40,00</p>
         </article>
 
-        <article>
-          <p></p>
-          <span></span>
+        <article class="produto">
+          <img src="bolo.png" alt="Bolo">
+          <h3>Bolo de Morango</h3>
+          <p>R$ 45,00</p>
         </article>
-      </section>
 
+        <article class="produto">
+          <img src="bolo.png" alt="Bolo">
+          <h3>Bolo de Baunilha</h3>
+          <p>R$ 42,00</p>
+        </article>
 
-      <!-- Contato -->
-      <section id="contato">
+      </div>
+    </section>
 
-        <form>
-          <h1>Instagram: Confetaria_Docci_Amore</h1>
-          <input type="text" placeholder="Nome">
-          <input type="email" placeholder="E-mail">
-          <textarea placeholder="Mensagem"></textarea>
-          <button type="submit">Enviar</button>
-        </form>
+    <!-- Galeria -->
+    <section id="galeria">
+      <h2>Galeria</h2>
 
-        <div>
-          <!-- Rodapé -->
-          <p>Rodapé</p>
-          <p>Rodapé</p>
+      <div class="galeria-container">
+        <img src="bolo.png" alt="Bolo">
+        <img src="bolo.png" alt="Bolo">
+        <img src="bolo.png" alt="Bolo">
+        <img src="bolo.png" alt="Bolo">
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="sobre" id="sobre">
+      <div class="sobre-container">
+
+        <div class="sobre-img">
+          <img src="imagens/bolosobre.png" alt="Bolo artesanal">
         </div>
-      </section>
+
+        <div class="sobre-texto">
+          <h2>Sobre Nós</h2>
+
+          <p>
+            Nossa confeitaria nasceu do amor por transformar momentos simples em memórias doces.
+            Cada receita é preparada com carinho, ingredientes selecionados e um toque artesanal
+            que faz toda a diferença.
+          </p>
+
+          <p>
+            Acreditamos que um doce vai muito além do sabor — ele representa celebração,
+            afeto e felicidade. Por isso, buscamos sempre criar experiências únicas em cada detalhe.
+          </p>
+
+          <p>
+            Seja para um aniversário, casamento ou um momento especial, estamos aqui para
+            tornar tudo ainda mais doce e inesquecível.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+
+      <h2>Contato</h2>
+
+      <form class="form-contato">
+        <p>Instagram: @confeitaria_docci_amore</p>
+
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="E-mail" required>
+        <textarea placeholder="Mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+    </section>
 
   </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2026 Docci Amore</p>
+    <p>Siga-nos no Instagram</p>
+  </footer>
 
 </body>
 
