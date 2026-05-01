@@ -1,0 +1,65 @@
+/* ===== Seção Sobre ===== */
+.sobre {
+  background-color: var(--cor-fundo);
+  padding: 100px 20px;
+}
+
+.sobre-container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* ===== Imagem ===== */
+.sobre-img {
+  flex: 1;
+  text-align: center;
+}
+
+.sobre-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+
+  box-shadow: 0 4px 20px rgba(139, 78, 68, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.sobre-img img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== Texto ===== */
+.sobre-texto {
+  flex: 1;
+  max-width: 500px;
+}
+
+.sobre-texto h2 {
+  font-size: 2.5rem;
+  color: var(--cor-principal);
+  margin-bottom: 20px;
+}
+
+.sobre-texto p {
+  font-size: 1rem;
+  color: var(--cor-escuro);
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px) {
+  .sobre-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-texto h2 {
+    font-size: 2rem;
+  }
+}
