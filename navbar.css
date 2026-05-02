@@ -1,0 +1,168 @@
+/* ======================================================
+   navbar.css — Navbar oficial do projeto Confeitaria
+   Responsável: Pedro
+   Padrão visual alinhado ao style.css global
+====================================================== */
+
+/* Barra promocional */
+.barra-anuncio {
+  width: 100%;
+  background: var(--cor-medio);
+  color: var(--cor-escuro);
+  text-align: center;
+  padding: 10px 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.barra-anuncio strong {
+  font-weight: 700;
+}
+
+.barra-anuncio a {
+  color: var(--cor-principal);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.barra-anuncio a:hover {
+  color: var(--cor-escuro);
+}
+
+/* Navbar principal */
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--cor-branco);
+  border-bottom: 1px solid var(--cor-medio);
+  box-shadow: 0 2px 12px rgba(139, 78, 68, 0.08);
+}
+
+/* Container interno */
+.navbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 75px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo-cursiva {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: var(--cor-principal);
+}
+
+.logo-sub {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--cor-destaque);
+  margin-top: 3px;
+}
+
+/* Menu */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: var(--cor-principal);
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  padding: 8px 14px;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  background: var(--cor-fundo);
+  color: var(--cor-escuro);
+}
+
+/* Botão destaque */
+.navbar-menu li a.btn-destaque {
+  background: var(--cor-principal);
+  color: var(--cor-branco);
+  font-weight: 700;
+}
+
+.navbar-menu li a.btn-destaque:hover {
+  background: var(--cor-escuro);
+}
+
+/* Linha decorativa */
+.navbar-divider {
+  width: 100%;
+  height: 2px;
+  background: var(--cor-destaque);
+  opacity: 0.4;
+}
+
+/* Botão mobile */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .navbar-inner {
+    padding: 0 20px;
+    height: 65px;
+  }
+
+  .navbar-toggle {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--cor-principal);
+  }
+
+  .navbar-menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    background: var(--cor-branco);
+    flex-direction: column;
+    padding: 20px;
+    border-top: 1px solid var(--cor-medio);
+    gap: 8px;
+  }
+
+  .navbar-menu.aberto {
+    display: flex;
+  }
+
+  .navbar-menu li a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-cursiva {
+    font-size: 1.6rem;
+  }
+}
