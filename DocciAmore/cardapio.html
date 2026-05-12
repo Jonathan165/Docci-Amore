@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Cardápio — Docci Amori</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="cardapio.css">
+</head>
+<body>
+
+<section class="sec-cardapio" id="cardapio">
+  <div class="sec-header">
+    <div class="divisor">
+      <span class="divisor-linha"></span>
+      <span class="divisor-icon">✦</span>
+      <span class="divisor-linha"></span>
+    </div>
+    <h2 class="sec-titulo">Nosso Cardápio</h2>
+    <p class="sec-sub">Cada receita é uma história de amor e dedicação</p>
+  </div>
+
+  <div class="grid" id="grid">
+
+    <article class="card" data-cat="bolos" data-nome="Bolo Morango & Chantilly">
+      <div class="card-img">
+        <span class="card-badge badge-popular">✦ Mais Pedido</span>
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700&q=90&auto=format&fit=crop" alt="Bolo Morango com Chantilly" loading="lazy"/>
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat">Bolos</span>
+        <h3 class="card-nome">Bolo Morango & Chantilly</h3>
+        <p class="card-desc">Massa branca, chantilly artesanal e morangos frescos. Cobertura leve com frutas da estação.</p>
+        <div class="card-footer">
+          <div class="card-preco-wrap">
+            <div class="card-preco-label">A partir de</div>
+            <div class="card-preco">R$&nbsp;189</div>
+            <div class="card-obs">bolo inteiro · 15 fatias</div>
+          </div>
+          <button class="btn-add" data-id="1" data-nome="Bolo Morango & Chantilly" data-preco="189">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Pedir
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-cat="bolos" data-nome="Bolo Chocolate Belga">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=700&q=90&auto=format&fit=crop" alt="Bolo Chocolate Belga" loading="lazy"/>
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat">Bolos</span>
+        <h3 class="card-nome">Bolo Chocolate Belga</h3>
+        <p class="card-desc">Massa úmida de cacau premium, ganache cremosa e cobertura de brigadeiro gourmet.</p>
+        <div class="card-footer">
+          <div class="card-preco-wrap">
+            <div class="card-preco-label">A partir de</div>
+            <div class="card-preco">R$&nbsp;215</div>
+            <div class="card-obs">bolo inteiro · 15 fatias</div>
+          </div>
+          <button class="btn-add" data-id="2" data-nome="Bolo Chocolate Belga" data-preco="215">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Pedir
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-cat="bolos" data-nome="Red Velvet Romântico">
+      <div class="card-img">
+        <span class="card-badge badge-novo">✦ Novidade</span>
+        <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=700&q=90&auto=format&fit=crop" alt="Bolo Red Velvet" loading="lazy"/>
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat">Bolos</span>
+        <h3 class="card-nome">Red Velvet Romântico</h3>
+        <p class="card-desc">Massa aveludada, recheio de cream cheese e decoração com rosas de açúcar artesanais.</p>
+        <div class="card-footer">
+          <div class="card-preco-wrap">
+            <div class="card-preco-label">A partir de</div>
+            <div class="card-preco">R$&nbsp;235</div>
+            <div class="card-obs">bolo inteiro · 15 fatias</div>
+          </div>
+          <button class="btn-add" data-id="3" data-nome="Red Velvet Romântico" data-preco="235">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Pedir
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-cat="bolos" data-nome="Bolo de Cenoura Caramelizado">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=700&q=90&auto=format&fit=crop" alt="Bolo de Cenoura" loading="lazy"/>
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat">Bolos</span>
+        <h3 class="card-nome">Bolo de Cenoura Caramelizado</h3>
+        <p class="card-desc">Receita clássica com cenouras frescas, cobertura de brigadeiro de chocolate e amêndoas.</p>
+        <div class="card-footer">
+          <div class="card-preco-wrap">
+            <div class="card-preco-label">A partir de</div>
+            <div class="card-preco">R$&nbsp;165</div>
+            <div class="card-obs">bolo inteiro · 15 fatias</div>
+          </div>
+          <button class="btn-add" data-id="4" data-nome="Bolo de Cenoura Caramelizado" data-preco="165">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Pedir
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-cat="tortas" data-nome="Torta Limão Siciliano">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?w=700&q=90&auto=format&fit=crop" alt="Torta Limão Siciliano" loading="lazy"/>
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat">Tortas</span>
+        <h3 class="card-nome">Torta Limão Siciliano</h3>
+        <p class="card-desc">Base crocante de biscoito, curd de limão siciliano e merengue italiano tostado na hora.</p>
+        <div class="card-footer">
+          <div class="card-preco-wrap">
+            <div class="card-preco-label">A partir de</div>
+            <div class="card-preco">R$&nbsp;145</div>
+            <div class="card-obs">torta inteira · 10 fatias</div>
+          </div>
+          <button class="btn-add" data-id="5" data-nome="Torta Limão Siciliano" data-preco="145">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Pedir
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-cat="tortas" data-nome="Cheesecake Frutas Vermelhas">
+      <div class="card-img">
+        <span class="card-badge badge-popular">✦ Destaque</span>
+        <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=700&q=90&auto=format&fit=crop" alt="Cheesecake Frutas Vermelhas" loading="lazy"/>
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat">Tortas</span>
+        <h3 class="card-nome">Cheesecake Frutas Vermelhas</h3>
+        <p class="card-desc">Cream cheese premium, base graham cracker e coulis de frutas vermelhas frescas colhidas.</p>
+        <div class="card-footer">
+          <div class="card-preco-wrap">
+            <div class="card-preco-label">A partir de</div>
+            <div class="card-preco">R$&nbsp;165</div>
+            <div class="card-obs">torta inteira · 10 fatias</div>
+          </div>
+          <button class="btn-add" data-id="6" data-nome="Cheesecake Frutas Vermelhas" data-preco="165">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Pedir
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-cat="tortas" data-nome="Mousse de Maracujá">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=700&q=90&auto=format&fit=crop" alt="Torta Mousse Maracujá" loading="lazy"/>
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat">Tortas</span>
+        <h3 class="card-nome">Mousse de Maracujá</h3>
+        <p class="card-desc">Mousse aerada de maracujá do cerrado, calda vibrante e base de biscoito de coco tostado.</p>
+        <div class="card-footer">
+          <div class="card-preco-wrap">
+            <div class="card-preco-label">A partir de</div>
+            <div class="card-preco">R$&nbsp;138</div>
+            <div class="card-obs">torta inteira · 10 fatias</div>
+          </div>
+          <button class="btn-add" data-id="7" data-nome="Mousse de Maracujá" data-preco="138">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Pedir
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-cat="doces" data-nome="Brigadeiro Gourmet">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=700&q=90&auto=format&fit=crop" alt="Brigadeiro Gourmet" loading="lazy"/>
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat">Doces Finos</span>
+        <h3 class="card-nome">Brigadeiro Gourmet</h3>
+        <p class="card-desc">Leite condensado premium, chocolate belga 70% e cobertura de granulado dourado importado.</p>
+        <div class="card-footer">
+          <div class="card-preco-wrap">
+            <div class="card-preco-label">Caixa com 12</div>
+            <div class="card-preco">R$&nbsp;78</div>
+            <div class="card-obs">unidade · R$&nbsp;6,50</div>
+          </div>
+          <button class="btn-add" data-id="8" data-nome="Brigadeiro Gourmet" data-preco="78">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Pedir
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-cat="bombons" data-nome="Bombons Belgas Sortidos">
+      <div class="card-img">
+        <span class="card-badge badge-exclusivo">✦ Exclusivo</span>
+        <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=700&q=90&auto=format&fit=crop" alt="Bombons Belgas" loading="lazy"/>
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat">Bombons</span>
+        <h3 class="card-nome">Bombons Belgas Sortidos</h3>
+        <p class="card-desc">Casca de chocolate belga com ganache de framboesa, caramelo fleur de sel e praliné de avelã.</p>
+        <div class="card-footer">
+          <div class="card-preco-wrap">
+            <div class="card-preco-label">Caixa com 9</div>
+            <div class="card-preco">R$&nbsp;92</div>
+            <div class="card-obs">unidade · R$&nbsp;10,20</div>
+          </div>
+          <button class="btn-add" data-id="9" data-nome="Bombons Belgas Sortidos" data-preco="92">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Pedir
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-cat="bombons" data-nome="Trufas de Chocolate">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1481391032119-d89fee407e44?w=700&q=90&auto=format&fit=crop" alt="Trufas de Chocolate" loading="lazy"/>
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat">Bombons</span>
+        <h3 class="card-nome">Trufas de Chocolate</h3>
+        <p class="card-desc">Trufas handmade com ganache aveludada de cacau peruano, finalizadas com cacau em pó artesanal.</p>
+        <div class="card-footer">
+          <div class="card-preco-wrap">
+            <div class="card-preco-label">Caixa com 6</div>
+            <div class="card-preco">R$&nbsp;64</div>
+            <div class="card-obs">unidade · R$&nbsp;10,70</div>
+          </div>
+          <button class="btn-add" data-id="10" data-nome="Trufas de Chocolate" data-preco="64">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Pedir
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-cat="cupcakes" data-nome="Cupcakes Decorados">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=700&q=90&auto=format&fit=crop" alt="Cupcakes Decorados" loading="lazy"/>
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat">Cupcakes</span>
+        <h3 class="card-nome">Cupcakes Decorados</h3>
+        <p class="card-desc">Massa fofinha em 5 sabores com buttercream colorido e decoração personalizada por ocasião.</p>
+        <div class="card-footer">
+          <div class="card-preco-wrap">
+            <div class="card-preco-label">Caixa com 6</div>
+            <div class="card-preco">R$&nbsp;67</div>
+            <div class="card-obs">unidade · R$&nbsp;11,20</div>
+          </div>
+          <button class="btn-add" data-id="11" data-nome="Cupcakes Decorados" data-preco="67">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Pedir
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-cat="cupcakes" data-nome="Cupcake Red Velvet">
+      <div class="card-img">
+        <span class="card-badge badge-novo">✦ Novo</span>
+        <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=700&q=90&auto=format&fit=crop" alt="Cupcake Red Velvet" loading="lazy"/>
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-body">
+        <span class="card-cat">Cupcakes</span>
+        <h3 class="card-nome">Cupcake Red Velvet</h3>
+        <p class="card-desc">Mini bolo aveludado com cobertura de cream cheese rosê e pétalas comestíveis artesanais.</p>
+        <div class="card-footer">
+          <div class="card-preco-wrap">
+            <div class="card-preco-label">Caixa com 6</div>
+            <div class="card-preco">R$&nbsp;72</div>
+            <div class="card-obs">unidade · R$&nbsp;12,00</div>
+          </div>
+          <button class="btn-add" data-id="12" data-nome="Cupcake Red Velvet" data-preco="72">
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Pedir
+          </button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
